@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Made from scratch by Gibraan Jafar
+# Create large file and count number of lines , words and characters in it.
+# Create large file from the shell using crunch
+
+read -p " Enter filename : " filename
+
+if [ -z $filename ]
+then
+	echo " Enter something ! "
+elif [ -e $filename ]
+then
+	echo -ne " Number of line in $filename = "
+	cat $filename | wc -l
+else
+	echo " $filename does not exist "
+fi

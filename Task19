@@ -1,0 +1,12 @@
+#!/bin/bash
+# Made from scratch by Gibraan Jafar
+
+#Accept 2 numbers using read
+#         Print =>  <variable1> raised to <variable2> = <answer> 
+#         // Check if possible using loop
+
+echo "$1^$2" | bc
+echo;echo
+echo "Another way : "
+ans=$(($1**$2))
+echo $ans
