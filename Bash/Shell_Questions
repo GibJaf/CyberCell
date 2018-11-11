@@ -1,0 +1,99 @@
+Shell Scripting Questions
+
+WSS stands for "Write a shell script" 
+
+
+1) unmount and mount a USB
+
+2) create a directory . Create 3 files in it with some content . Copy the entire folder 
+	to another location . Delete original folder .
+
+3) Write a shell script to
+	create a large file using crunch command
+	Print   number of lines
+		number of words
+		number of characters
+	
+4) Create a file using crunch , compress it , then expand it elsewhere .
+
+5) Create alias => nanol=nano -l
+	Also unalias it
+
+6) View .html document using browser from terminal
+	firefox <file_name.html>
+
+7) Accept base and value as arguments and print value to the given base
+   eg : arguments : 2 and 15 will print 1111
+	arguments : 8 and 15 will print 17
+	arguments : 16 and 15 will print E
+	Use If-Else to check base provided and 
+	Use bc and obase to convert value to specified base  
+
+8) Add 2 numbers received as arguments .
+
+
+9) Print hostname , username , current working directory , current time (12hr_format:minute) .
+
+10) Produce LEET SPEAK of string entered through read
+
+11) Print : Enter even numbers 
+	Keep accepting and adding even numbers 
+	Terminate as soon as user enteres an odd number 
+    Display sum
+
+12) Add 2 numbers by accepting them from read 
+	Do same for sub,mul,divide
+
+13) Add user Remove existing users
+
+14) Ask user for length of pi value to be printed and print accordingly
+
+15) Create 3 files using crunch or whatever .
+    Put their md5sum in file called MD5SUM
+    Put their SHA1   in file called SHA1
+    Put md5sum and SHA1 of MD5SUM and SHA1 in file FINAL
+
+16) Print pattern of 
+	*
+	**
+	***
+
+17) Print pattern 
+	***
+	**
+	*
+
+18) Accept 2 numbers using read .
+	Print => <variable1> raised to <variable2> = <answer>
+
+19) Accept 2 values as arguments .
+	Display options : 
+		Press 1 to add
+		Press 2 to subtract
+		Enter your choice : 
+	And accordingly print result.
+	Use Switch Case statements
+
+20) Accept 2 values as arguments .
+        Display options :
+                Press 1 to add
+                Press 2 to subtract
+                Enter your choice :
+        And accordingly print result.
+        Use If-Else 
+
+21) Accept 2 numbers as arguments and display the LARGER of them
+	If both are equal , print that they are equal .
+
+22)  WSS print only current day of week.
+	eg: If today is Friday , only print Friday 
+     Then change date from terminal to 1st October 2018 and print what day it will be then
+									ie: Monday
+
+23) WSS to accept file name as argument . Check and print whether it is has Read and/or Write
+    and/or Execute permission for owner of the file 
+	Use If-Else
+
+24) Accept 2 numbers as arguments and display the SMALLER of them
+        If both are equal , print that they are equal .
+

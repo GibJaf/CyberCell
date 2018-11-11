@@ -1,0 +1,30 @@
+#!/bin/bash
+# Made from scratch by Gibraan Jafar
+
+# Create a directory .
+# Create 3 files in it with some content .
+# Copy the entire folder to another location .
+# Delete original folder .
+
+
+# create folder "test"
+mkdir test
+
+# create 2 files in it
+touch test/file1 test/file2
+
+# put some random content into those files
+echo  Welcome to CyberCell !  > test/file1
+echo  Are you ready ? ?       > test/file2
+
+# even though file3 doesn't exist , it gets created automatically
+echo  Lets break some stuff ! > test/file3
+
+# copying entire folder to another location , eg: Downloads
+cp -rf  test ~/Downloads
+
+# Deleting test folder with all its contents
+rm -rf  test
+# Copy in Downloads still exists
+
+echo Done !

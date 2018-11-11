@@ -1,0 +1,41 @@
+#!/bin/bash
+
+
+# first of all manually create a file using either
+# a text editor like nano or gedit or vim or whatever
+# echo command in another script
+# crunch command eg: crunch 4 4 1234 -o file
+
+# while loop asks user for filename until some valid name is enterd
+
+filename=""
+while true
+do
+	read -p " Enter filename : " filename
+
+	# check if user didn't enter anything
+	if [ -z $filename ]
+	then
+		echo -e " Enter something ! \n"
+
+	# check if such a file does not exist
+	elif [ ! -e $filename ]
+	then
+		echo -e " No such file exists ! \n "
+
+	# check if this file exists
+	elif [ -e $filename ]
+	then
+		echo -ne " Number of line in $filename = "
+		cat $filename | wc -l
+
+		echo -ne " Number of words in $filename = "
+		cat $filename | wc -w
+
+		echo -ne " Number of characters in $filename = "
+		cat $filename | wc -m
+
+		break
+	fi
+done
+

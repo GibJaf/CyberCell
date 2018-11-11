@@ -1,0 +1,40 @@
+#!/bin/bash
+# Made from scratch by Gibraan Jafar
+
+# Make big file from the shell using crunch
+# Compress it using tar in te=he same folder
+# Uncompress it in root folder
+
+filename=""
+while true
+do
+        read -p " Enter filename : " filename
+
+        # check if user didn't enter anything
+        if [ -z $filename ]
+        then
+                echo -e " Enter something ! \n"
+
+        # check if such a file does not exist
+        elif [ ! -e $filename ]
+        then
+                echo -e " No such file exists ! \n "
+
+        # check if this file exists
+        elif [ -e $filename ]
+        then
+		echo Compressing $filename
+		tar -czvf $filename.gz $filename
+		sleep 5 # stoping script for 10 seconds for effects :P
+		echo " Now , uncompressing it in root folder "
+		tar -xzvf $filename.gz  -C ~/
+		break
+	fi
+
+done
+
+# Interesting fact
+# Can give the compressed file any extension . It could be .GaandMaraChutiye.Whatever
+
+# For meaning of -xvzf and -czvf check out man page of tar command
+# or refer this link https://www.tecmint.com/18-tar-command-examples-in-linux/

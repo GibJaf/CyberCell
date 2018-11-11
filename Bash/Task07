@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Made from scratch by Gibraan Jafar
+
+#  Accept base and value as arguments and print value to the given base
+#   eg : arguments : 2 and 15 will print 1111
+#        arguments : 8 and 15 will print 17
+#        arguments : 16 and 15 will print E
+#        Use If-Else to check base provided and
+#        Use bc and obase to convert value to specified base
+
+if [ $1 = "2" ]
+then
+	bc <<< "obase=2;$2"
+elif [ $1 = "8" ]
+then
+	bc <<< "obase=8;$2"
+elif [ $1 = "16" ]
+then
+	bc <<< "obase=16;$2"
+fi

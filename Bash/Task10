@@ -1,0 +1,16 @@
+#!/bin/bash
+# made from scratch by Gibraan jafar
+
+read -p 'Enter a string : ' string
+
+if [ -z $string ]
+then
+	echo You did not enter anything
+else
+	echo -n " Leet of	$string 	  is 		"
+	echo  $string | tr abcdefghijklmnopqrstuvwxyz 4bcd3f6h1jklmn0pqr57uvwxyz
+fi
+
+# ISSUE
+# 2 word input	       => error : Task10: line 7: [: gib: binary operator expected
+# 3 or more word input => error : Task10: line 6: [: too many arguments
