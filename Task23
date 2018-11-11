@@ -1,9 +1,0 @@
-#!/bin/bash
-# Made from scratch by Gibraan Jafar
-
-# Change date and time from terminal according to link :
-# https://askubuntu.com/questions/342854/what-is-the-command-line-statement-for-changing-the-system-clock
-# Date and time don't change from terminal if in settings  "Automatic Date & Time " is enabled
-
-DOW=$(date +%A)
-echo Day of week recovered : $DOW
