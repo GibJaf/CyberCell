@@ -1,0 +1,25 @@
+#!/bin/bash
+# Made from scratch by Gibraan Jafar
+
+# Print pattern of
+#        ***
+#        **
+#        *
+
+
+i=3
+while [ $i -ge 1 ]
+do
+	j=1
+	while [ $j -le $i ]
+	do
+		echo -n  \*
+		((j++))
+	done
+	echo
+	((i--))
+done
+
+# TRY
+# Print the pattern for as many rows
+# as given by the user

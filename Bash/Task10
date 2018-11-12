@@ -11,6 +11,7 @@ else
 	echo  $string | tr abcdefghijklmnopqrstuvwxyz 4bcd3f6h1jklmn0pqr57uvwxyz
 fi
 
+# Scope for improvement : fix following issue
 # ISSUE
 # 2 word input	       => error : Task10: line 7: [: gib: binary operator expected
 # 3 or more word input => error : Task10: line 6: [: too many arguments

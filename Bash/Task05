@@ -3,8 +3,26 @@
 
 # Write a script to create an alias
 # For example , here we are making nanol become alias for "nano -l"
+# nano is a text editor in Linux
 
+# Preferably create a backup of your .bashrc file before running
+# this script using command => cp .bashrc .bashrc_backup
 
-echo "alias nanol='nano -l'" >> ~/.bashrc
+echo " Press 1 to create alias "
+echo " Press 2 to remove alias "
+echo " Enter your choice : "
+read choice
 
-# In terminal type => unalias nanol
+case $choice in
+	1)
+		echo "alias nanol='nano -l'" >> ~/.bashrc
+		exec bash
+		;;
+	2)
+		echo "unalias nanol" >> ~/.bashrc
+		exec bash
+		;;
+	*)
+		echo " Wrong input ! "
+		;;
+esac

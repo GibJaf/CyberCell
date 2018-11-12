@@ -3,24 +3,36 @@ Shell Scripting Questions
 WSS stands for "Write a shell script" 
 
 
-1) unmount and mount a USB
+1) Write a shell script to :
+	unmount a USB
+	mount it in Downloads folder
+	Print contents of USB
+	Put script to sleep for 30 seconds
+	unmount the USB and eject it
 
-2) create a directory . Create 3 files in it with some content . Copy the entire folder 
-	to another location . Delete original folder .
+2) create a directory . 
+	Create 3 files in it with some content .
+	Copy the entire folder to another location . 
+	Delete original folder .
 
 3) Write a shell script to
-	create a large file using crunch command
+	create a file using a text editor or use crunch command
 	Print   number of lines
 		number of words
 		number of characters
 	
-4) Create a file using crunch , compress it , then expand it elsewhere .
+4) Make big file from the shell using crunch
+	Compress it using tar in te=he same folder
+	Uncompress it in root folder
 
-5) Create alias => nanol=nano -l
-	Also unalias it
+5) Ask user for option to 
+	Create alias => nanol=nano -l
+	or  unalias it
+	by editing .bashrc file
 
-6) View .html document using browser from terminal
-	firefox <file_name.html>
+6) Write a shell script to
+	create a html document 
+	View .html document using browser from terminal
 
 7) Accept base and value as arguments and print value to the given base
    eg : arguments : 2 and 15 will print 1111
@@ -30,6 +42,7 @@ WSS stands for "Write a shell script"
 	Use bc and obase to convert value to specified base  
 
 8) Add 2 numbers received as arguments .
+	Check for number of arguments also
 
 
 9) Print hostname , username , current working directory , current time (12hr_format:minute) .
@@ -41,10 +54,16 @@ WSS stands for "Write a shell script"
 	Terminate as soon as user enteres an odd number 
     Display sum
 
-12) Add 2 numbers by accepting them from read 
-	Do same for sub,mul,divide
+12) Write a shell script to
+	Accept 2 numbers  from read
+	Ask whether to + , - , * or /
+	Do respective operation and print result
 
-13) Add user Remove existing users
+13) Write a shell script to
+	Ask whether to add a user or
+            to remove a user
+	Ask name of user to be added or removed
+	Do respective operation
 
 14) Ask user for length of pi value to be printed and print accordingly
 

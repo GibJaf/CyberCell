@@ -34,7 +34,8 @@ do
 done
 
 # Interesting fact
-# Can give the compressed file any extension . It could be .GaandMaraChutiye.Whatever
+# Can give the compressed file any extension . It could be .SomeRandomCrap.DontGiveAShit
+# Give it a try :P
 
 # For meaning of -xvzf and -czvf check out man page of tar command
 # or refer this link https://www.tecmint.com/18-tar-command-examples-in-linux/

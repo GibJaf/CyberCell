@@ -1,6 +1,26 @@
 #!/bin/bash
 # Made from scratch by Gibraan Jafar
 
-echo -ne "Keep entering even integers :
+# Print : Enter even numbers
+# Keep accepting and adding even numbers
+# Terminate as soon as user enteres an odd number
+# Display sum
+
+num=0
+sum=0
+
+while [ $( expr $num % 2 ) = 0 ]
+do
+	read -p  " Enter a number " num
+	((sum+=num))
+done
+
+# to remove last odd number entered
+((sum-=num))
+echo Sum = $sum
 
 
+# IMPROVEMENT
+# Handle scenario when user presses enter
+# without entering any value or enters a
+# non numeric value

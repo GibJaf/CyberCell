@@ -1,0 +1,21 @@
+#!/bin/bash
+# Made from scratch by Gibraan Jafar
+
+
+# Accept 2 numbers using read .
+# Print => <variable1> raised to <variable2> = <answer>
+
+
+read -p " Enter a number " num1
+read -p " Enter 1 more number " num2
+
+#echo " $num1 raised to power $num2 =  `echo "$num1^$num2" | bc` "
+# or
+# echo -n " $num1 raised to power $num2 = "
+# echo "$num1^$num2" | bc
+
+echo " $num1 raised to power $num2 =  `dc -e "$num1 $num2 ^ p"` "
+
+# IMPROVEMENTS
+# Check for non numeric values entered by user
+# Enable num1 ^ negative_num2 .

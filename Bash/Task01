@@ -14,6 +14,10 @@
 # So no comments have been included.
 # For more info check out man pages of umount and eject command
 
+# This script is specific to directory structure in my laptop.
+# So , if you try to run it in your computer it will not work . 
+# To make this specific to your laptop , contact me and I'll help you out.
+
 echo Umounting from /media/el1t3/GIB4B/
 sudo umount /dev/sdb1
 echo Mounting at /home/el1t3/Documents/VIIT/ForUSB

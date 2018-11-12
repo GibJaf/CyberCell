@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Honourable mention
+# Very good solution by : 
+
+#NAME-SAUMITRA KULKARNI
+#BRANCH-COMPUTER
+#YEAR-SECOND YEAR
+
+echo "Choose the Operation "
+echo "a.Addition s.Subtraction"
+echo "m.Multiplication d.Divsion "
+
+read string1
+
+case $string1 in
+     a)
+       echo "Enter the two numbers: "
+       read a 
+       read b
+       result=`expr $a + $b`
+       echo "add is:" $result       
+       ;;
+     s)
+       echo "Enter the two numbers: "
+       read a 
+       read b
+       result=`expr $a - $b`
+       echo "Sub is:" $result       
+       ;;
+     m)
+       echo "Enter the two numbers: "
+       read a 
+       read b
+       result=`expr $a \* $b`
+       echo "mul is: " $result       
+       ;;
+     d)
+       echo "Enter the two numbers: "
+       read a 
+       read b
+       result=`expr $a / $b`
+       echo "Div is:" $result       
+       ;;
+esac
+     
+# 
+
+

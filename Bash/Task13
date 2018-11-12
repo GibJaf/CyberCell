@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Honourable mention
+# Very good solution by
+
+# NAME SHIVAM PARVE
+# BRANCH COMPUTER
+# DIVIDION B
+
+
+echo "enter the option"
+echo "a. add user"
+echo "b. remove user"
+
+read string1
+case $string1 in
+
+    a)
+		echo -n "enter the user name you want to insert:"
+		read text
+		useradd "$text"
+               ;;
+  b)
+		 echo -n "enter the user name you want to remove:"
+		read tex1
+
+		sudo su -
+		userdel "$text1"
+		     ;;
+esac
+
+
+
+# Scope for improvement
+# When accept name of user to delete
+# check if user exists already .
+# If exists , delete the user
+# If not , print " no such user exists "
+
+# Also check out https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-16-04

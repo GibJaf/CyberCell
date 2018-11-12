@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#   Create 3 files using crunch or whatever .
+#   Put their md5sum in file called MD5SUM
+#   Put their SHA1   in file called SHA1
+#   Put md5sum and SHA1 of MD5SUM and SHA1 in file FINAL
+
+
+# Creating 3 files
+
+echo " A remote administration tool (RAT) is a programmed tool that allows a remote device to control a system as if they have
+ physical access to that system. While desktop sharing and remote administration have many legal uses, “RAT” software
+ is usually associated with unauthorized or malicious activity. " > file1
+
+echo " A rootkit is a collection of computer software, typically malicious, designed to enable access to a computer or areas
+ of its software that is not otherwise allowed (for example, to an unauthorized user) and often masks its existence or the
+ existence of other software. " > file2
+
+echo " Phishing is the fraudulent attempt to obtain sensitive information such as usernames, passwords and credit card details 
+ by disguising as a trustworthy entity in an electronic communication. " > file3
+
+
+# Put their md5sum in file called MD5SUM
+md5sum file1 file2 file3 > MD5SUM
+
+# Put their SHA1   in file called SHA1
+sha1sum file1 file2 file3 > SHA1
+
+# Put md5sum and SHA1 of MD5SUM and SHA1 in file FINAL
+md5sum MD5SUM > FINAL
+sha1sum SHA1 >> FINAL
