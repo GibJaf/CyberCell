@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo rm /bin/dmesg > dmesgFixReport
+sudo cp ~/Scripts/dmesg/temp/dmesg /bin/  >> dmesgFixReport

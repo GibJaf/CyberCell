@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir temp
+sudo cp /bin/dmesg ~/Scripts/dmesg/temp/
+
+sudo rm /bin/dmesg
+echo " echo " I did not attach any USB to this computer , I swear ." " > dmesg
+chmod +x dmesg
+
+sudo mv dmesg /bin/

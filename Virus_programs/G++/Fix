@@ -1,0 +1,11 @@
+sudo rm /usr/bin/g++
+rm a.out
+cp sample pgm1.cpp
+
+#rm pgm1.cpp
+#echo ' #include<iostream> ' >> pgm1.cpp
+#echo ' using namespace std; ' >> pgm1.cpp
+#echo ' int main() { ' >> pgm1.cpp
+#echo ' cout<<" Hello World !\n "; ' >> pgm1.cpp
+#echo ' } ' >> pgm1.cpp
+sudo apt install -y  g++ > fixingReport

